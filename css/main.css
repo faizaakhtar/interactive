@@ -1,0 +1,27 @@
+#embed-1 {
+    max-width: 820px;
+}
+
+svg {
+    width:100%;
+}
+            
+text {
+    fill:#111;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+        
+circle.eyes {
+    stroke:blue;
+    stroke-width:8px;
+    fill:lightblue;
+}
+            
+.landscape {
+    fill:#7ec0ee;
+}
+            
+.portrait {
+    fill:#dedede;
+}
