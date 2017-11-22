@@ -11,14 +11,15 @@
     </head>
     <body>
         <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
-        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>	
+        <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
         <script type="text/javascript">
         new pym.Child();
-			pym.Child({ renderCallback: createChart });
+			pym.Child({ renderCallback: createGraphic });
 			var svgDoc;
             
-            function createChart(container_width)	{
-                var mobSwitch=600;
+            function createGraphic(container_width)	{
+                var mobSwitch=742;
     			//if svg already exists, clear out contents, else create svg element
     			if (typeof svgDoc !='undefined')	{
     				var myNode = document.getElementById("svgDoc");
@@ -29,22 +30,11 @@
     				svgDoc = d3.select("body").append("svg").attr("id","svgDoc");
 
     			}
-    			//we now have a nice empty svg element to work with
-
-                var defs = svgDoc.append("defs")
 
     			//set the height of the graphic according to the width
     			if (container_width>mobSwitch)	{
-                    //symbol definition for a tree
-    				svgDoc.attr("height",container_width*0.5);
-                    var tree = defs.append("g")
-                        .attr("id","iconTree");
-                    tree.append("polygon")
-                        .attr("points","21.1,50 16,43 16,0 4,0 4,43 -1.1,50 ")
-                        .attr("fill","#998675");
-                    tree.append("path")
-                        .attr("d","M38.2-9.4c0-5.5-4.5-10-10-10c-0.4,0-0.8,0.1-1.3,0.1c0.1-0.4,0.1-0.8,0.1-1.3c0-5.5-4.5-10-10-10c-3.5,0-6.5,1.8-8.3,4.5c-1.8-2.7-4.8-4.5-8.3-4.5c-4,0-7.4,2.4-9,5.8c-0.7-0.1-1.4-0.2-2.1-0.2c-5.5,0-10,4.5-10,10c0,2.1,0.6,4,1.7,5.5c-1.1,1.6-1.7,3.5-1.7,5.5c0,4.2,2.6,7.8,6.3,9.2c1.5,3.7,5,6.3,9.2,6.3c3.5,0,6.5-1.8,8.3-4.5c1.8,2.7,4.8,4.5,8.3,4.5c2.1,0,4-0.6,5.5-1.7c1.6,1.1,3.5,1.7,5.5,1.7c5.5,0,10-4.5,10-10c0-0.7-0.1-1.4-0.2-2.1C35.8-2,38.2-5.4,38.2-9.4z")
-                        .attr("fill","#39B54A");
+                    //Desktop Background
+    				svgDoc.attr("height",container_width*0.5);       
     			}	else	{
     				svgDoc.attr("height",container_width*1.5);
     			}
@@ -55,47 +45,30 @@
     			var bg=graph.append("rect")
     				    .attr("width","100%")
     				    .attr("height","100%")
+                        .attr("id","bg");
 
     			if (container_width>mobSwitch)	{
     				graph.append("text")
     					.attr("x",20)
     					.attr("y",20)
     					.text("Larger view (width = "+container_width+" pixels)");
-                    //pretty landscape picture...
+ 
                     //foreground
-                    graph.append("rect")
-                        .attr("width","100%")
-                        .attr("height","37%")
-                        .attr("y","63%")
-                        .attr("fill","green")
-                    //sun
+                    //Test Circle
                     graph.append("circle")
-                        .attr("cx","85%")
-                        .attr("cy","14%")
+                        .attr("cx","50%")
+                        .attr("cy","50%")
                         .attr("r","7%")
-                        .attr("fill","yellow")
-                    //place some trees 
-                    numTrees=7;
-                    treeSpacing = container_width/numTrees;
-                    treeArray=d3.range(numTrees);
-                    graph.selectAll("use")
-                        .data(treeArray)
-                        .enter()
-                        .append("use")
-                        .attr("xlink:href","#iconTree")
-                        .attr("id",function(d,i){
-                            return "tree"+i
-                        })
-                        .attr("x",function(d,i){
-                            return 20+(i*treeSpacing)
-                        })
-                        .attr("y","60%");
-                    bg.attr("class","landscape");
+                        .attr("fill","#ffffff");
+                    
+                    //Background
+                    document.getElementById('bg').style.backgroundImage = "url('images/thumb-1920-559128.jpg')";
+                    
     			}	else	{
     				graph.append("text")
     					.attr("x",20)
     					.attr("y",20)
-    					.text("Smaller view (width = "+container_width+" pixels)")
+    					.text("Smaller view (width = "+container_width+" pixels)");
                     
                     //woeful depiction of a person in portrait - but you get the idea
                     graph.append("ellipse")
@@ -103,29 +76,29 @@
                         .attr("cy",555)
                         .attr("rx",function(){return container_width/2})
                         .attr("ry","40%")
-                        .attr("fill","#72512d")
+                        .attr("fill","#72512d");
                     graph.append("ellipse")
                         .attr("cx",container_width/2)
                         .attr("cy",300)
                         .attr("rx",function(){return container_width/4})
                         .attr("ry",175)
-                        .attr("fill","pink")
+                        .attr("fill","pink");
                     graph.append("circle")
                         .attr("cx",function(){return (container_width/2)-30})
                         .attr("cy",270)
                         .attr("r",12)
-                        .attr("class","eyes")
+                        .attr("class","eyes");
                     graph.append("circle")
                         .attr("cx",function(){return (container_width/2)+30})
                         .attr("cy",270)
                         .attr("r",12)
-                        .attr("class","eyes")
+                        .attr("class","eyes");
                     graph.append("ellipse")
                         .attr("cx",container_width/2)
                         .attr("cy",400)
                         .attr("rx",15)
                         .attr("ry",25)
-                        .attr("fill","black")
+                        .attr("fill","black");
                     bg.attr("class","portrait");  
     			}
             }
