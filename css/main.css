@@ -1,5 +1,9 @@
 svg {
     width:100%;
+    max-width:980px;
+    max-height:758px;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
 }
             
 text {
@@ -14,7 +18,7 @@ circle.eyes {
     fill:lightblue;
 }
             
-.landscape {
+#landscape {
     background-image:url(../images/thumb-1920-559128.jpg);
     min-height:100%;
     background-repeat:no-repeat;

@@ -19,7 +19,7 @@
 			var svgDoc;
             
             function createGraphic(container_width)	{
-                var mobSwitch=742;
+                var mobSwitch=740;
     			//if svg already exists, clear out contents, else create svg element
     			if (typeof svgDoc !='undefined')	{
     				var myNode = document.getElementById("svgDoc");
@@ -34,7 +34,7 @@
     			//set the height of the graphic according to the width
     			if (container_width>mobSwitch)	{
                     //Desktop Background
-    				svgDoc.attr("height",container_width*0.5);       
+    				svgDoc.attr("height",container_width*0.773);       
     			}	else	{
     				svgDoc.attr("height",container_width*1.5);
     			}
@@ -42,10 +42,10 @@
     			//create group - and append rect which shows the height of the svg graphic
     			var graph = svgDoc.append("g");
 
-    			var bg=graph.append("rect")
-    				    .attr("width","100%")
-    				    .attr("height","100%")
-                        .attr("id","bg");
+    			//var bg=graph.append("rect")
+    				   // .attr("width","100%")
+    				   // .attr("height","100%")
+                       // .attr("id","landscape");
 
     			if (container_width>mobSwitch)	{
     				graph.append("text")
@@ -54,16 +54,42 @@
     					.text("Larger view (width = "+container_width+" pixels)");
  
                     //foreground
-                    //Test Circle
+                    //Center Circle for alignment
                     graph.append("circle")
                         .attr("cx","50%")
-                        .attr("cy","50%")
-                        .attr("r","7%")
+                        .attr("cy","41.5%")
+                        .attr("r","50px")
+                        .attr("fill","#ffffff");
+                    
+                    //Circles left to right excluding center circle
+                    graph.append("circle")
+                        .attr("cx","13.2%")
+                        .attr("cy","39.9%")
+                        .attr("r","50px")
+                        .attr("fill","#ffffff");
+                        
+                    graph.append("circle")
+                        .attr("cx","31.6%")
+                        .attr("cy","35.8%")
+                        .attr("r","50px")
+                        .attr("fill","#ffffff");
+                        
+                    graph.append("circle")
+                        .attr("cx","68.4%")
+                        .attr("cy","47.6%")
+                        .attr("r","50px")
+                        .attr("fill","#ffffff");
+                        
+                    graph.append("circle")
+                        .attr("cx","86.8%")
+                        .attr("cy","50.6%")
+                        .attr("r","50px")
                         .attr("fill","#ffffff");
                     
                     //Background
-                    document.getElementById('bg').style.backgroundImage = "url('images/thumb-1920-559128.jpg')";
-                    
+                    //document.getElementById('landscape').style.backgroundImage = "url('images/thumb-1920-559128.jpg')";
+                    document.getElementById('svgDoc').style.backgroundImage = "url('images/testBackground.png')";
+                    document.getElementById('svgDoc').style.backgroundRepeat = "no-repeat";
     			}	else	{
     				graph.append("text")
     					.attr("x",20)
