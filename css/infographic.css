@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info_container {
+    width: 980px;
+    height: 758px;
+    background-image: url("../images/testBackground.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 0 auto;
+}
+
+#nuc_wea_gfx {
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    top: 22.6%;
+    left: 5%;
+    clear: both;
+}
+
+#nuc_wea_txt {
+    float: left;
+    position: relative;
+    width: 110px;
+    height: 55px;
+    top: 21.1%;
+    left: 7.7%;
+    clear: both;
+}
+
+
+/**********************Overlay*****************/
+#overlay_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 10000;
+    overflow: scroll;
+    display: none;
+}
+
+#overlay_close {
+    position: fixed;
+    width: 14px;
+    padding: 5px;
+    background-color: grey;
+    border: 2px solid rgb(244, 177, 53);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    right: 25px;
+    left: 0;
+    margin: 13px 5px auto auto;
+}
+
+#overlay_close:hover {
+    cursor: pointer;
+}
+
+
+
+/*******************Testing************************/
+
+#nuc_wea_view {
+    width:980px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+#test {
+    width: 490px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#test2 {
+    width: 490px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}

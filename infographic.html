@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/infographic.css">
+        <!-- include jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
+            <script type="text/javascript">
+                new pym.Child();
+                    pym.Child({ renderCallback: createGraphic });
+            </script>
+            
+            
+        <div id="info_container">
+            
+            <!-- Graphics -->
+            <img id="nuc_wea_txt" src="images/nuclear_weapons_head.png">
+            <img id="nuc_wea_gfx" src="images/b61_icon_white_glow.png">
+            
+            
+            <!-- PopUps -->
+            <div id="overlay_container">
+                <div id="overlay_close">X</div>
+                <div id="nuc_wea_view" class="open_view">
+                    <img id="test" src="images/bkgrd_map.png">
+                    <img id="test" src="images/bkgrd_map.png">
+                    <img id="test" src="images/bkgrd_map.png">
+                </div>
+                <div id="counterterrorism_view" class="open_view">
+                    <img id="test" src="images/bkgrd_map.png">
+                    <img id="test" src="images/bkgrd_map.png">
+                    <img id="test" src="images/bkgrd_map.png">
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <script type="text/javascript" src="js/interactive.js"></script>
+        <script type="text/javascript">
+            new pym.Child();
+        </script>
+    </body>
+</html>
