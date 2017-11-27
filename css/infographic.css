@@ -16,8 +16,8 @@ body {
     position: relative;
     width: 160px;
     height: 160px;
-    top: 22.6%;
-    left: 5%;
+    top: 22.1%;
+    left: 5.4%;
     clear: both;
 }
 
@@ -71,6 +71,26 @@ body {
     clear: both;
 }
 
+#nuc_inf_gfx {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -52.25%;
+    left: 60.85%;
+    clear: both;
+}
+
+#nuc_inf_txt {
+    float: left;
+    position: relative;
+    width: 186px;
+    height: 78px;
+    top: -50.2%;
+    left: 59.6%;
+    clear: both;
+}
+
 
 /**********************Overlay*****************/
 #overlay_container {
@@ -106,7 +126,7 @@ body {
 
 
 
-/*******************Testing************************/
+/*******************Views************************/
 
 #nuc_wea_view {
     width:980px;
@@ -123,6 +143,20 @@ body {
 }
 
 #arms_control_view {
+    width:980px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+#nuc_inf_view {
+    width:980px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+#deterrence_view {
     width:980px;
     display: block;
     margin: 0 auto;

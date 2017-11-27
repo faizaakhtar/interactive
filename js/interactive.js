@@ -64,11 +64,34 @@ $(document).ready(function () {
     //Arms Control Text
     $("#arms_control_txt").hover(function(){
         $(this).attr("src", "images/nonprolif_arms_head_gold.png");
-        $("#arms_control_gfx").attr("src", "images/images/satellite_icon_gold_glow.png");
+        $("#arms_control_gfx").attr("src", "images/satellite_icon_gold_glow.png");
     },
         function() {
             $(this).attr("src", "images/nonprolif_arms_head.png");
             $("#arms_control_gfx").attr("src", "images/satellite_icon_white_glow.png");
+        });
+    
+    ///////////////////////////////////////////////
+    /////Nuke Infra Mod////////////////////////////
+    ///////////////////////////////////////////////
+    //Arms Control Graphics
+    $("#nuc_inf_gfx").hover(function(){
+        $(this).attr("src", "images/buildings_icon_gold_glow.png");
+        $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head_gold.png");
+    },
+        function() {
+            $(this).attr("src", "images/buildings_icon_white_glow.png");
+            $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head.png");
+        });
+    
+    //Arms Control Text
+    $("#nuc_inf_txt").hover(function(){
+        $(this).attr("src", "images/nuke_infra_mod_head_gold.png");
+        $("#nuc_inf_gfx").attr("src", "images/buildings_icon_gold_glow.png");
+    },
+        function() {
+            $(this).attr("src", "images/nuke_infra_mod_head.png");
+            $("#nuc_inf_gfx").attr("src", "images/buildings_icon_white_glow.png");
         });
     
     
@@ -76,39 +99,52 @@ $(document).ready(function () {
     //Nuclear Weapons
     $("#nuc_wea_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#nuc_wea_view").slideToggle(200);
+            $("#nuc_wea_view").slideToggle(400);
         }); 
     });
     
     $("#nuc_wea_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#nuc_wea_view").slideToggle(200);
+            $("#nuc_wea_view").slideToggle(400);
         }); 
     });
     
     //Counterterrorism
     $("#counterterrorism_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#counterterrorism_view").slideToggle(200);
+            $("#counterterrorism_view").slideToggle(400);
         }); 
     });
     
     $("#counterterrorism_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#counterterrorism_view").slideToggle(200);
+            $("#counterterrorism_view").slideToggle(400);
         }); 
     });
     
     //Arms Control
     $("#arms_control_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#arms_control_view").slideToggle(200);
+            $("#arms_control_view").slideToggle(400);
         }); 
     });
     
     $("#arms_control_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#arm_control_view").slideToggle(200);
+            $("#arm_control_view").slideToggle(400);
+        }); 
+    });
+    
+    //Nuke Infra Mod
+    $("#nuc_inf_gfx").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#nuc_inf_view").slideToggle(400);
+        }); 
+    });
+    
+    $("#nuc_inf_txt").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#nuc_inf_view").slideToggle(400);
         }); 
     });
     
