@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #info_container {
     width: 980px;
     height: 758px;
@@ -44,6 +48,26 @@
     height: 80px;
     top: 19.2%;
     left: 19.5%;
+    clear: both;
+}
+
+#arms_control_gfx {
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    top: -27.8%;
+    left: 42.5%;
+    clear: both;
+}
+
+#arms_control_txt {
+    float: left;
+    position: relative;
+    width: 206px;
+    height: 76px;
+    top: -60.5%;
+    left: 40.3%;
     clear: both;
 }
 
@@ -98,19 +122,17 @@
     display: none;
 }
 
-#test {
-    width: 490px;
-    height: 300px;
-    display: block;
-    margin: 0 auto;
-}
-
-#test2 {
-    width: 490px;
-    height: 300px;
+#arms_control_view {
+    width:980px;
     display: block;
     margin: 0 auto;
     display: none;
+}
+
+#test {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
 }
 
 /******Media Queries**********/

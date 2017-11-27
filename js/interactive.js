@@ -48,6 +48,29 @@ $(document).ready(function () {
             $("#counterterrorism_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
         });
     
+    ///////////////////////////////////////////////
+    /////Arms Control//////////////////////////////
+    ///////////////////////////////////////////////
+    //Arms Control Graphics
+    $("#arms_control_gfx").hover(function(){
+        $(this).attr("src", "images/satellite_icon_gold_glow.png");
+        $("#arms_control_txt").attr("src", "images/nonprolif_arms_head_gold.png");
+    },
+        function() {
+            $(this).attr("src", "images/satellite_icon_white_glow.png");
+            $("#arms_control_txt").attr("src", "images/nonprolif_arms_head.png");
+        });
+    
+    //Arms Control Text
+    $("#arms_control_txt").hover(function(){
+        $(this).attr("src", "images/nonprolif_arms_head_gold.png");
+        $("#arms_control_gfx").attr("src", "images/images/satellite_icon_gold_glow.png");
+    },
+        function() {
+            $(this).attr("src", "images/nonprolif_arms_head.png");
+            $("#arms_control_gfx").attr("src", "images/satellite_icon_white_glow.png");
+        });
+    
     
     ////////////////////////////////////////////////////Click functions/////////////////////////
     //Nuclear Weapons
@@ -73,6 +96,19 @@ $(document).ready(function () {
     $("#counterterrorism_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterrorism_view").slideToggle(200);
+        }); 
+    });
+    
+    //Arms Control
+    $("#arms_control_gfx").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#arms_control_view").slideToggle(200);
+        }); 
+    });
+    
+    $("#arms_control_txt").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#arm_control_view").slideToggle(200);
         }); 
     });
     
