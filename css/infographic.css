@@ -11,12 +11,21 @@ body {
     margin: 0 auto;
 }
 
+#info_title_gfx {
+    float: left;
+    position: relative;
+    width: 577px;
+    top: 4.7%;
+    left: 21.4%;
+    clear:both;
+}
+
 #nuc_wea_gfx {
     float: left;
     position: relative;
     width: 160px;
     height: 160px;
-    top: 22.1%;
+    top: 16.1%;
     left: 5.4%;
     clear: both;
 }
@@ -25,8 +34,7 @@ body {
     float: left;
     position: relative;
     width: 110px;
-    height: 55px;
-    top: 21.1%;
+    top: 15.5%;
     left: 7.7%;
     clear: both;
 }
@@ -35,8 +43,7 @@ body {
     float: left;
     position: relative;
     width: 150px;
-    height: 150px;
-    top: -13%;
+    top: -17.8%;
     left: 24%;
     clear: both;
 }
@@ -45,8 +52,7 @@ body {
     float: left;
     position: relative;
     width: 238px;
-    height: 80px;
-    top: 19.2%;
+    top: 14%;
     left: 19.5%;
     clear: both;
 }
@@ -55,8 +61,7 @@ body {
     float: left;
     position: relative;
     width: 160px;
-    height: 160px;
-    top: -27.8%;
+    top: -31.8%;
     left: 42.5%;
     clear: both;
 }
@@ -65,8 +70,7 @@ body {
     float: left;
     position: relative;
     width: 206px;
-    height: 76px;
-    top: -60.5%;
+    top: -63.7%;
     left: 40.3%;
     clear: both;
 }
@@ -75,8 +79,7 @@ body {
     float: left;
     position: relative;
     width: 150px;
-    height: 150px;
-    top: -52.25%;
+    top: -55.25%;
     left: 60.85%;
     clear: both;
 }
@@ -85,8 +88,7 @@ body {
     float: left;
     position: relative;
     width: 186px;
-    height: 78px;
-    top: -50.2%;
+    top: -53.2%;
     left: 59.6%;
     clear: both;
 }
@@ -108,7 +110,7 @@ body {
 #overlay_close {
     position: fixed;
     width: 14px;
-    padding: 5px;
+    padding: 5px 5px 4px 5px;
     background-color: grey;
     border: 2px solid rgb(244, 177, 53);
     border-radius: 3px;
@@ -118,6 +120,7 @@ body {
     right: 25px;
     left: 0;
     margin: 13px 5px auto auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
 }
 
 #overlay_close:hover {
