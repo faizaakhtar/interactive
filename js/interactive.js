@@ -74,7 +74,7 @@ $(document).ready(function () {
     ///////////////////////////////////////////////
     /////Nuke Infra Mod////////////////////////////
     ///////////////////////////////////////////////
-    //Arms Control Graphics
+    //Nuke Infra Mod Graphics
     $("#nuc_inf_gfx").hover(function(){
         $(this).attr("src", "images/buildings_icon_gold_glow.png");
         $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head_gold.png");
@@ -84,7 +84,7 @@ $(document).ready(function () {
             $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head.png");
         });
     
-    //Arms Control Text
+    //Nuke Infra Mod Text
     $("#nuc_inf_txt").hover(function(){
         $(this).attr("src", "images/nuke_infra_mod_head_gold.png");
         $("#nuc_inf_gfx").attr("src", "images/buildings_icon_gold_glow.png");
@@ -92,6 +92,29 @@ $(document).ready(function () {
         function() {
             $(this).attr("src", "images/nuke_infra_mod_head.png");
             $("#nuc_inf_gfx").attr("src", "images/buildings_icon_white_glow.png");
+        });
+    
+    ///////////////////////////////////////////////
+    /////Deterrence////////////////////////////////
+    ///////////////////////////////////////////////
+    //Deterrence Graphics
+    $("#deterrence_gfx").hover(function(){
+        $(this).attr("src", "images/deterrence_icon_gold_glow.png");
+        $("#deterrence_txt").attr("src", "images/deterrence_head_gold.png");
+    },
+        function() {
+            $(this).attr("src", "images/deterrence_icon_white_glow.png");
+            $("#deterrence_txt").attr("src", "images/deterrence_head.png");
+        });
+    
+    //Deterrence Text
+    $("#deterrence_txt").hover(function(){
+        $(this).attr("src", "images/deterrence_head_gold.png");
+        $("#deterrence_gfx").attr("src", "images/deterrence_icon_gold_glow.png");
+    },
+        function() {
+            $(this).attr("src", "images/deterrence_head.png");
+            $("#deterrence_gfx").attr("src", "images/deterrence_icon_white_glow.png");
         });
     
     
@@ -145,6 +168,19 @@ $(document).ready(function () {
     $("#nuc_inf_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_inf_view").slideToggle(400);
+        }); 
+    });
+    
+    //Nuke Infra Mod
+    $("#deterrence_gfx").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#deterrence_view").slideToggle(400);
+        }); 
+    });
+    
+    $("#deterrence_txt").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#deterrence_view").slideToggle(400);
         }); 
     });
     
