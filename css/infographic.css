@@ -1,5 +1,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    width:980px;
+    height: 980px;
+    display: block;
+    margin: 0 auto;
 }
 
 #info_container {

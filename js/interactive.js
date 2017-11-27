@@ -77,7 +77,7 @@ $(document).ready(function () {
     });
     
     
-    
+    /////////////Close the Overlay////////////////
     //Close Overlay
     $("#overlay_close").click(function() {
        $("#overlay_container").fadeToggle(500, function() {
