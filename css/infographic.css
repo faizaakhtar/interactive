@@ -31,6 +31,26 @@ body {
     clear: both;
 }
 
+#counterterrorism_gfx {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -13%;
+    left: 24%;
+    clear: both;
+}
+
+#counterterrorism_txt {
+    float: left;
+    position: relative;
+    width: 238px;
+    height: 80px;
+    top: 19.2%;
+    left: 19.5%;
+    clear: both;
+}
+
 
 /**********************Overlay*****************/
 #overlay_container {
@@ -69,6 +89,13 @@ body {
 /*******************Testing************************/
 
 #nuc_wea_view {
+    width:980px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+#counterterrorism_view {
     width:980px;
     display: block;
     margin: 0 auto;

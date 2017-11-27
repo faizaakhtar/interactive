@@ -28,17 +28,55 @@ $(document).ready(function () {
     ///////////////////////////////////////////////
     /////Counterterrorism//////////////////////////
     ///////////////////////////////////////////////
-    //
+    //CounterTerror Graphics
+    $("#counterterrorism_gfx").hover(function(){
+        $(this).attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
+        $("#counterterrorism_txt").attr("src", "images/counterterror_prolif_head_gold.png");
+    },
+        function() {
+            $(this).attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
+            $("#counterterrorism_txt").attr("src", "images/counterterror_prolif_head.png");
+        });
+    
+    //CounterTerror Text
+    $("#counterterrorism_txt").hover(function(){
+        $(this).attr("src", "images/counterterror_prolif_head_gold.png");
+        $("#counterterrorism_gfx").attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
+    },
+        function() {
+            $(this).attr("src", "images/counterterror_prolif_head.png");
+            $("#counterterrorism_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
+        });
     
     
-    //Click functions
-    //Nuclear Weapons Graphic
+    ////////////////////////////////////////////////////Click functions/////////////////////////
+    //Nuclear Weapons
     $("#nuc_wea_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(200);
-        });
-        
+        }); 
     });
+    
+    $("#nuc_wea_txt").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#nuc_wea_view").slideToggle(200);
+        }); 
+    });
+    
+    //Counterterrorism
+    $("#counterterrorism_gfx").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#counterterrorism_view").slideToggle(200);
+        }); 
+    });
+    
+    $("#counterterrorism_txt").click(function(){
+        $("#overlay_container").fadeToggle(500, function() {
+            $("#counterterrorism_view").slideToggle(200);
+        }); 
+    });
+    
+    
     
     //Close Overlay
     $("#overlay_close").click(function() {
