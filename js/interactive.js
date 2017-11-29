@@ -29,23 +29,23 @@ $(document).ready(function () {
     /////Counterterrorism//////////////////////////
     ///////////////////////////////////////////////
     //CounterTerror Graphics
-    $("#counterterrorism_gfx").hover(function(){
+    $("#counterterror_gfx").hover(function(){
         $(this).attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
-        $("#counterterrorism_txt").attr("src", "images/counterterror_prolif_head_gold.png");
+        $("#counterterror_txt").attr("src", "images/counterterror_prolif_head_gold.png");
     },
         function() {
             $(this).attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
-            $("#counterterrorism_txt").attr("src", "images/counterterror_prolif_head.png");
+            $("#counterterror_txt").attr("src", "images/counterterror_prolif_head.png");
         });
     
     //CounterTerror Text
-    $("#counterterrorism_txt").hover(function(){
+    $("#counterterror_txt").hover(function(){
         $(this).attr("src", "images/counterterror_prolif_head_gold.png");
-        $("#counterterrorism_gfx").attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
+        $("#counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
     },
         function() {
             $(this).attr("src", "images/counterterror_prolif_head.png");
-            $("#counterterrorism_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
+            $("#counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
         });
     
     ///////////////////////////////////////////////
@@ -133,15 +133,15 @@ $(document).ready(function () {
     });
     
     //Counterterrorism
-    $("#counterterrorism_gfx").click(function(){
+    $("#counterterror_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#counterterrorism_view").slideToggle(400);
+            $("#counterterror_view").slideToggle(400);
         }); 
     });
     
-    $("#counterterrorism_txt").click(function(){
+    $("#counterterror_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#counterterrorism_view").slideToggle(400);
+            $("#counterterror_view").slideToggle(400);
         }); 
     });
     
@@ -188,6 +188,12 @@ $(document).ready(function () {
     /////////////Close the Overlay////////////////
     //Close Overlay
     $("#overlay_close").click(function() {
+       $("#overlay_container").fadeToggle(500, function() {
+            $(".open_view").hide();
+       }); 
+    });
+    
+    $("#overlay_button_close").click(function() {
        $("#overlay_container").fadeToggle(500, function() {
             $(".open_view").hide();
        }); 

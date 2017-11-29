@@ -1,0 +1,235 @@
+body {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#graphics_container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#background_image {
+    position: absolute;
+    width: 100%
+}
+
+/*#info_title {
+    position: relative;
+    color: red;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding-top: 4.5%;
+    font-size: 39px;
+}*/
+
+#title_image {
+    position: absolute;
+    z-index: 1000;
+    width: 59%;
+    left: 21.2%;
+    padding-top: 3.75%;
+}
+
+#nuc_wea_gfx {
+    position: absolute;
+    z-index: 1000;
+    width: 15.3%;
+    left:5.5%;
+    padding-top: 23.3%;
+}
+
+#nuc_wea_txt {
+    position: absolute;
+    z-index: 1000;
+    width: 11.1%;
+    left:7.8%;
+    padding-top: 16.55%;
+}
+
+#counterterror_gfx {
+    position: absolute;
+    z-index: 1000;
+    width: 15.3%;
+    left:24%;
+    padding-top: 20.1%;
+}
+
+#counterterror_txt {
+    position: absolute;
+    z-index: 1000;
+    width: 24.4%;
+    left:19.5%;
+    padding-top: 37.05%;
+}
+
+#arms_control_gfx {
+    position: absolute;
+    z-index: 1000;
+    width: 16.5%;
+    left:42.4%;
+    padding-top: 24.4%;
+}
+
+#arms_control_txt {
+    position: absolute;
+    z-index: 1000;
+    width: 21.2%;
+    left:40.1%;
+    padding-top: 14.9%;
+}
+
+#nuc_inf_gfx {
+    position: absolute;
+    z-index: 1000;
+    width: 15.3%;
+    left:60.75%;
+    padding-top: 29.25%;
+}
+
+#nuc_inf_txt {
+    position: absolute;
+    z-index: 1000;
+    width: 18.9%;
+    left:59.7%;
+    padding-top: 46%;
+}
+
+#deterrence_gfx {
+    position: absolute;
+    z-index: 1000;
+    width: 18.25%;
+    left:79.2%;
+    padding-top: 31.5%;
+}
+
+#deterrence_txt {
+    position: absolute;
+    z-index: 1000;
+    width: 13.6%;
+    left:80.1%;
+    padding-top: 27.1%;
+}
+
+#overlay_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#overlay_close {
+    position: fixed;
+    width: 14px;
+    padding: 5px 5px 4px 5px;
+    background-color: grey;
+    border: 2px solid rgb(244, 177, 53);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    right: 25px;
+    left: 0;
+    margin: 13px 5px auto auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    z-index: 5500;
+}
+
+#overlay_button_close {
+    display: block;
+    background-color: grey;
+    color: white;
+    border: 2px solid rgb(244, 177, 53);
+    border-radius: 3px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    margin: 20px auto;
+}
+
+#overlay_close:hover, #overlay_button_close:hover {
+    cursor: pointer;
+}
+
+.overlay_header {
+    margin: 5px 0;
+    font-size: large;
+    color: white;
+}
+
+.overlay_subheader {
+    color: white;
+}
+
+.overlay_snip {
+    color: white;
+}
+
+.overlay_divider {
+    color: rgb(244, 177, 53);
+    background-color: rgb(244, 177, 53);
+    height: 2px;
+}
+
+.overlay_video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.overlay_paragraph {
+    color: white;
+    margin: 15px 0;
+}
+
+
+/*****************************************Views***********************************/
+#nuc_wea_view {
+    position: relative;
+    width:70%;
+    display: block;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+}
+
+#counterterror_view {
+    position: relative;
+    width:70%;
+    display: block;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+}
+
+#arms_control_view {
+    position: relative;
+    width:70%;
+    display: block;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+}
+
+#nuc_inf_view {
+    position: relative;
+    width:70%;
+    display: block;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+}
+
+#deterrence_view {
+    position: relative;
+    width:70%;
+    display: block;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+}
+
+
+@media screen and (max-width:979px) {
+    
+}

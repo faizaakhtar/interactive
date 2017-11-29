@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/infogfx.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </head>
+        <body>
+            <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
+            <script type="text/javascript">
+                var pymChild = new pym.Child({renderCallback});
+            </script>
+            
+            <div id="graphics_container">
+                <!------------------- Desktop Graphics ----------------------->
+                <img id="background_image" src="images/bkgrd_map.png">
+
+                <img id="title_image" src="images/nnsa_graphic_title.png">
+                
+                <img id="nuc_wea_gfx" src="images/b61_icon_white_glow.png">
+                <img id="nuc_wea_txt" src="images/nuclear_weapons_head.png">
+
+                <img id="counterterror_gfx" src="images/nuke_rad_symbol_icon_white_glow.png">
+                <img id="counterterror_txt" src="images/counterterror_prolif_head.png">
+
+                <img id="arms_control_gfx" src="images/satellite_icon_white_glow.png">
+                <img id="arms_control_txt" src="images/nonprolif_arms_head.png">
+
+                <img id="nuc_inf_gfx" src="images/buildings_icon_white_glow.png">
+                <img id="nuc_inf_txt" src="images/nuke_infra_mod_head.png">
+
+                <img id="deterrence_gfx" src="images/deterrence_icon_white_glow.png">
+                <img id="deterrence_txt" src="images/deterrence_head.png">
+                
+                <!-- Mobile Graphics -->
+                
+                <!-- Overlay -->
+                <div id="overlay_container">
+                    <div id="overlay_close">X</div>
+                    
+                    <div id="nuc_wea_view" class="open_view">
+                        <h1 class="overlay_header">Nuclear Weapons</h1>
+                        <h2 class="overlay_subheader">Sub-header</h2>
+                        <p class="overlay_snip">This is a small excerpt</p>
+                        <hr class="overlay_divider">
+                        <iframe class="overlay_video" src="https://player.vimeo.com/video/243347835?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p class="overlay_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa urna, dictum non sem sed, rhoncus ullamcorper dui. Phasellus a magna lobortis, viverra leo sit amet, vehicula tellus. Integer eleifend efficitur orci sit amet gravida. Quisque sodales neque porttitor tortor ultrices condimentum. Nunc quis congue tellus. Vestibulum sed porta lectus. Phasellus faucibus molestie cursus. Quisque venenatis lectus orci, sed lobortis lacus pellentesque eget. Fusce elementum mauris nisl, sit amet posuere enim tempor ac. Cras pharetra purus elit, eu congue ex consectetur eget. Proin et quam ut ex malesuada venenatis at in metus. Proin rhoncus sed nisl vel lacinia. Phasellus vitae ante massa. Integer non auctor felis, eget molestie arcu. Praesent lorem dui, tempor quis vulputate ut, congue non tellus. Sed a mi tellus.</p>
+                        <hr class="overlay_divider">
+                    </div>
+                    
+                    <div id="counterterror_view" class="open_view">
+                        <h1 class="overlay_header">Nuclear Weapons</h1>
+                        <h2 class="overlay_subheader">Sub-header</h2>
+                        <p class="overlay_snip">This is a small excerpt</p>
+                        <hr class="overlay_divider">
+                        <iframe class="overlay_video" src="https://player.vimeo.com/video/243347835?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p class="overlay_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa urna, dictum non sem sed, rhoncus ullamcorper dui. Phasellus a magna lobortis, viverra leo sit amet, vehicula tellus. Integer eleifend efficitur orci sit amet gravida. Quisque sodales neque porttitor tortor ultrices condimentum. Nunc quis congue tellus. Vestibulum sed porta lectus. Phasellus faucibus molestie cursus. Quisque venenatis lectus orci, sed lobortis lacus pellentesque eget. Fusce elementum mauris nisl, sit amet posuere enim tempor ac. Cras pharetra purus elit, eu congue ex consectetur eget. Proin et quam ut ex malesuada venenatis at in metus. Proin rhoncus sed nisl vel lacinia. Phasellus vitae ante massa. Integer non auctor felis, eget molestie arcu. Praesent lorem dui, tempor quis vulputate ut, congue non tellus. Sed a mi tellus.</p>
+                        <hr class="overlay_divider">
+                    </div>
+                    
+                    <div id="arms_control_view" class="open_view">
+                        <h1 class="overlay_header">Nuclear Weapons</h1>
+                        <h2 class="overlay_subheader">Sub-header</h2>
+                        <p class="overlay_snip">This is a small excerpt</p>
+                        <hr class="overlay_divider">
+                        <iframe class="overlay_video" src="https://player.vimeo.com/video/243347835?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p class="overlay_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa urna, dictum non sem sed, rhoncus ullamcorper dui. Phasellus a magna lobortis, viverra leo sit amet, vehicula tellus. Integer eleifend efficitur orci sit amet gravida. Quisque sodales neque porttitor tortor ultrices condimentum. Nunc quis congue tellus. Vestibulum sed porta lectus. Phasellus faucibus molestie cursus. Quisque venenatis lectus orci, sed lobortis lacus pellentesque eget. Fusce elementum mauris nisl, sit amet posuere enim tempor ac. Cras pharetra purus elit, eu congue ex consectetur eget. Proin et quam ut ex malesuada venenatis at in metus. Proin rhoncus sed nisl vel lacinia. Phasellus vitae ante massa. Integer non auctor felis, eget molestie arcu. Praesent lorem dui, tempor quis vulputate ut, congue non tellus. Sed a mi tellus.</p>
+                        <hr class="overlay_divider">
+                    </div>
+                    
+                    <div id="nuc_inf_view" class="open_view">
+                        <h1 class="overlay_header">Nuclear Weapons</h1>
+                        <h2 class="overlay_subheader">Sub-header</h2>
+                        <p class="overlay_snip">This is a small excerpt</p>
+                        <hr class="overlay_divider">
+                        <iframe class="overlay_video" src="https://player.vimeo.com/video/243347835?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p class="overlay_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa urna, dictum non sem sed, rhoncus ullamcorper dui. Phasellus a magna lobortis, viverra leo sit amet, vehicula tellus. Integer eleifend efficitur orci sit amet gravida. Quisque sodales neque porttitor tortor ultrices condimentum. Nunc quis congue tellus. Vestibulum sed porta lectus. Phasellus faucibus molestie cursus. Quisque venenatis lectus orci, sed lobortis lacus pellentesque eget. Fusce elementum mauris nisl, sit amet posuere enim tempor ac. Cras pharetra purus elit, eu congue ex consectetur eget. Proin et quam ut ex malesuada venenatis at in metus. Proin rhoncus sed nisl vel lacinia. Phasellus vitae ante massa. Integer non auctor felis, eget molestie arcu. Praesent lorem dui, tempor quis vulputate ut, congue non tellus. Sed a mi tellus.</p>
+                        <hr class="overlay_divider">
+                    </div>
+                    
+                    <div id="deterrence_view" class="open_view">
+                        <h1 class="overlay_header">Nuclear Weapons</h1>
+                        <h2 class="overlay_subheader">Sub-header</h2>
+                        <p class="overlay_snip">This is a small excerpt</p>
+                        <hr class="overlay_divider">
+                        <iframe class="overlay_video" src="https://player.vimeo.com/video/243347835?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p class="overlay_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa urna, dictum non sem sed, rhoncus ullamcorper dui. Phasellus a magna lobortis, viverra leo sit amet, vehicula tellus. Integer eleifend efficitur orci sit amet gravida. Quisque sodales neque porttitor tortor ultrices condimentum. Nunc quis congue tellus. Vestibulum sed porta lectus. Phasellus faucibus molestie cursus. Quisque venenatis lectus orci, sed lobortis lacus pellentesque eget. Fusce elementum mauris nisl, sit amet posuere enim tempor ac. Cras pharetra purus elit, eu congue ex consectetur eget. Proin et quam ut ex malesuada venenatis at in metus. Proin rhoncus sed nisl vel lacinia. Phasellus vitae ante massa. Integer non auctor felis, eget molestie arcu. Praesent lorem dui, tempor quis vulputate ut, congue non tellus. Sed a mi tellus.</p>
+                        <hr class="overlay_divider">
+                    </div>
+                    <div><button id="overlay_button_close">CLOSE</button></div>
+                    
+                </div>
+                
+                
+            </div>
+            <script type="text/javascript" src="js/interactive.js"></script>
+        </body>
+    </html>
