@@ -1,12 +1,11 @@
 body {
     font-family: sans-serif;
-    font-weight: bolder;
 }
 
 #graphics_container {
     position: relative;
     width: 100%;
-    margin: 0 auto;
+    margin: 1px auto;
 }
 
 #background_image {
@@ -115,6 +114,7 @@ body {
 #overlay_container {
     position: fixed;
     width: 100%;
+    max-height: 100%;
     z-index: 5000;
     background-color: rgba(0, 0, 0, .8);
     display: none;
@@ -173,6 +173,7 @@ body {
 }
 
 .overlay_video {
+    display: block;
     width: 100%;
     margin: 0 auto;
 }
@@ -191,13 +192,13 @@ body {
 .overlay_list {
     list-style: square;
     color: white;
-    margin: 15px 0 15px 15px;
+    margin: 15px 0 15px 20px;
 }
 
 .overlay_nested_list {
     list-style: circle;
     color: white;
-    margin: 0 15px;
+    margin: 5px 0 5px 15px;
 }
 
 
@@ -206,7 +207,6 @@ body {
 #nuc_wea_view {
     position: relative;
     width:70%;
-    display: block;
     margin: 20px auto;
     display: none;
 }
@@ -214,37 +214,30 @@ body {
 #counterterror_view {
     position: relative;
     width:70%;
-    display: block;
     margin: 20px auto;
     display: none;
-    overflow: auto;
+
 }
 
 #arms_control_view {
     position: relative;
     width:70%;
-    display: block;
     margin: 20px auto;
     display: none;
-    overflow: auto;
 }
 
 #nuc_inf_view {
     position: relative;
     width:70%;
-    display: block;
     margin: 20px auto;
     display: none;
-    overflow: auto;
 }
 
 #deterrence_view {
     position: relative;
     width:70%;
-    display: block;
     margin: 20px auto;
     display: none;
-    overflow: auto;
 }
 
 
