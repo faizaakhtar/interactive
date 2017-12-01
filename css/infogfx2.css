@@ -209,7 +209,10 @@ body {
     margin: 5px 0 5px 15px;
 }
 
-
+.filler {
+    display: block;
+    margin: 0 auto;
+}
 
 /*****************************************Views***********************************/
 #nuc_wea_view {

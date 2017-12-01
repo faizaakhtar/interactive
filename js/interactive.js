@@ -124,14 +124,14 @@ $(document).ready(function () {
     $("#nuc_wea_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
-            $("#nuc_wea_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
+            $("#nuc_wea_video").attr("src", "");
         }); 
     });
     
     $("#nuc_wea_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
-            $("#nuc_wea_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
+            $("#nuc_wea_video").attr("src", "");
         }); 
     });
     
