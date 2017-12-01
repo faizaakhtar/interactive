@@ -1,6 +1,7 @@
 $(document).ready(function () {
     
     
+    $("#graphics_container").height($("#background_image").height());
     ////////////////////////////////////////////////Hover functions/////////////////////////////////////////
     ///////////////////////////////////////
     /////Nuclear Weapons///////////////////
@@ -138,12 +139,14 @@ $(document).ready(function () {
     $("#counterterror_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
         }); 
     });
     
     $("#counterterror_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
         }); 
     });
     
