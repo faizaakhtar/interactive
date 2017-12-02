@@ -131,14 +131,14 @@ $(document).ready(function () {
     
     ////////////////////////////////////////////////////Click functions/////////////////////////
     //Nuclear Weapons
-    $("#nuc_wea_gfx").click(function(){
+    $(".nuc_wea_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
             $("#nuc_wea_video").attr("src", "");
         }); 
     });
     
-    $("#nuc_wea_txt").click(function(){
+    $(".nuc_wea_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
             $("#nuc_wea_video").attr("src", "");
@@ -146,14 +146,14 @@ $(document).ready(function () {
     });
     
     //Counterterrorism
-    $("#counterterror_gfx").click(function(){
+    $(".counterterror_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
             $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
         }); 
     });
     
-    $("#counterterror_txt").click(function(){
+    $(".counterterror_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
             $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
@@ -161,39 +161,39 @@ $(document).ready(function () {
     });
     
     //Arms Control
-    $("#arms_control_gfx").click(function(){
+    $(".arms_control_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
         }); 
     });
     
-    $("#arms_control_txt").click(function(){
+    $(".arms_control_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
-            $("#arm_control_view").slideToggle(400);
+            $("#arms_control_view").slideToggle(400);
         }); 
     });
     
     //Nuke Infra Mod
-    $("#nuc_inf_gfx").click(function(){
+    $(".nuc_inf_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_inf_view").slideToggle(400);
         }); 
     });
     
-    $("#nuc_inf_txt").click(function(){
+    $(".nuc_inf_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_inf_view").slideToggle(400);
         }); 
     });
     
     //Nuke Infra Mod
-    $("#deterrence_gfx").click(function(){
+    $(".deterrence_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#deterrence_view").slideToggle(400);
         }); 
     });
     
-    $("#deterrence_txt").click(function(){
+    $(".deterrence_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#deterrence_view").slideToggle(400);
         }); 
