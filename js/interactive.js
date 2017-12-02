@@ -7,115 +7,125 @@ $(document).ready(function () {
     /////Nuclear Weapons///////////////////
     ///////////////////////////////////////
     //Nuclear Weapons Graphic
-    $("#nuc_wea_gfx").hover(function(){
+    $(".nuc_wea_gfx").hover(function(){
         $(this).attr("src", "images/b61_icon_gold_glow.png");
-        $("#nuc_wea_txt").attr("src", "images/nuclear_weapons_head_gold.png");
+        $(".nuc_wea_txt").attr("src", "images/nuclear_weapons_head_gold.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/b61_icon_white_glow.png");
-            $("#nuc_wea_txt").attr("src", "images/nuclear_weapons_head.png");
+            $(".nuc_wea_txt").attr("src", "images/nuclear_weapons_head.png");
         });
     
     //Nuclear Weapons Text
-    $("#nuc_wea_txt").hover(function(){
+    $(".nuc_wea_txt").hover(function(){
         $(this).attr("src", "images/nuclear_weapons_head_gold.png");
-        $("#nuc_wea_gfx").attr("src", "images/b61_icon_gold_glow.png");
+        $(".nuc_wea_gfx").attr("src", "images/b61_icon_gold_glow.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/nuclear_weapons_head.png");
-            $("#nuc_wea_gfx").attr("src", "images/b61_icon_white_glow.png");
+            $(".nuc_wea_gfx").attr("src", "images/b61_icon_white_glow.png");
         });
     
     ///////////////////////////////////////////////
     /////Counterterrorism//////////////////////////
     ///////////////////////////////////////////////
     //CounterTerror Graphics
-    $("#counterterror_gfx").hover(function(){
+    $(".counterterror_gfx").hover(function(){
         $(this).attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
-        $("#counterterror_txt").attr("src", "images/counterterror_prolif_head_gold.png");
+        $(".counterterror_txt").attr("src", "images/counterterror_prolif_head_gold.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
-            $("#counterterror_txt").attr("src", "images/counterterror_prolif_head.png");
+            $(".counterterror_txt").attr("src", "images/counterterror_prolif_head.png");
         });
     
     //CounterTerror Text
-    $("#counterterror_txt").hover(function(){
+    $(".counterterror_txt").hover(function(){
         $(this).attr("src", "images/counterterror_prolif_head_gold.png");
-        $("#counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
+        $(".counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_gold_glow.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/counterterror_prolif_head.png");
-            $("#counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
+            $(".counterterror_gfx").attr("src", "images/nuke_rad_symbol_icon_white_glow.png");
         });
     
     ///////////////////////////////////////////////
     /////Arms Control//////////////////////////////
     ///////////////////////////////////////////////
     //Arms Control Graphics
-    $("#arms_control_gfx").hover(function(){
+    $(".arms_control_gfx").hover(function(){
         $(this).attr("src", "images/satellite_icon_gold_glow.png");
-        $("#arms_control_txt").attr("src", "images/nonprolif_arms_head_gold.png");
+        $(".arms_control_txt").attr("src", "images/nonprolif_arms_head_gold.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/satellite_icon_white_glow.png");
-            $("#arms_control_txt").attr("src", "images/nonprolif_arms_head.png");
+            $(".arms_control_txt").attr("src", "images/nonprolif_arms_head.png");
         });
     
     //Arms Control Text
-    $("#arms_control_txt").hover(function(){
+    $(".arms_control_txt").hover(function(){
         $(this).attr("src", "images/nonprolif_arms_head_gold.png");
-        $("#arms_control_gfx").attr("src", "images/satellite_icon_gold_glow.png");
+        $(".arms_control_gfx").attr("src", "images/satellite_icon_gold_glow.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/nonprolif_arms_head.png");
-            $("#arms_control_gfx").attr("src", "images/satellite_icon_white_glow.png");
+            $(".arms_control_gfx").attr("src", "images/satellite_icon_white_glow.png");
         });
     
     ///////////////////////////////////////////////
     /////Nuke Infra Mod////////////////////////////
     ///////////////////////////////////////////////
     //Nuke Infra Mod Graphics
-    $("#nuc_inf_gfx").hover(function(){
+    $(".nuc_inf_gfx").hover(function(){
         $(this).attr("src", "images/buildings_icon_gold_glow.png");
-        $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head_gold.png");
+        $(".nuc_inf_txt").attr("src", "images/nuke_infra_mod_head_gold.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/buildings_icon_white_glow.png");
-            $("#nuc_inf_txt").attr("src", "images/nuke_infra_mod_head.png");
+            $(".nuc_inf_txt").attr("src", "images/nuke_infra_mod_head.png");
         });
     
     //Nuke Infra Mod Text
-    $("#nuc_inf_txt").hover(function(){
+    $(".nuc_inf_txt").hover(function(){
         $(this).attr("src", "images/nuke_infra_mod_head_gold.png");
-        $("#nuc_inf_gfx").attr("src", "images/buildings_icon_gold_glow.png");
+        $(".nuc_inf_gfx").attr("src", "images/buildings_icon_gold_glow.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/nuke_infra_mod_head.png");
-            $("#nuc_inf_gfx").attr("src", "images/buildings_icon_white_glow.png");
+            $(".nuc_inf_gfx").attr("src", "images/buildings_icon_white_glow.png");
         });
     
     ///////////////////////////////////////////////
     /////Deterrence////////////////////////////////
     ///////////////////////////////////////////////
     //Deterrence Graphics
-    $("#deterrence_gfx").hover(function(){
+    $(".deterrence_gfx").hover(function(){
         $(this).attr("src", "images/deterrence_icon_gold_glow.png");
-        $("#deterrence_txt").attr("src", "images/deterrence_head_gold.png");
+        $(".deterrence_txt").attr("src", "images/deterrence_head_gold.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/deterrence_icon_white_glow.png");
-            $("#deterrence_txt").attr("src", "images/deterrence_head.png");
+            $(".deterrence_txt").attr("src", "images/deterrence_head.png");
         });
     
     //Deterrence Text
-    $("#deterrence_txt").hover(function(){
+    $(".deterrence_txt").hover(function(){
         $(this).attr("src", "images/deterrence_head_gold.png");
-        $("#deterrence_gfx").attr("src", "images/deterrence_icon_gold_glow.png");
+        $(".deterrence_gfx").attr("src", "images/deterrence_icon_gold_glow.png");
+        $(this).css('cursor', 'pointer');
     },
         function() {
             $(this).attr("src", "images/deterrence_head.png");
-            $("#deterrence_gfx").attr("src", "images/deterrence_icon_white_glow.png");
+            $(".deterrence_gfx").attr("src", "images/deterrence_icon_white_glow.png");
         });
     
     

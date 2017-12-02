@@ -47,12 +47,20 @@ body {
     padding-top: 23.3%;
 }
 
+.nuc_wea_gfx {
+    width: 100%;
+}
+
 #nuc_wea_txt {
     position: absolute;
     z-index: 1000;
     width: 11.1%;
     left:7.8%;
     padding-top: 16.55%;
+}
+
+.nuc_wea_txt {
+    width: 100%;
 }
 
 #counterterror_gfx {
@@ -63,12 +71,20 @@ body {
     padding-top: 20.1%;
 }
 
+.counterterror_gfx {
+    width: 100%;
+}
+
 #counterterror_txt {
     position: absolute;
     z-index: 1000;
     width: 24.4%;
     left:19.5%;
     padding-top: 37.05%;
+}
+
+.counterterror_txt {
+    width: 100%
 }
 
 #arms_control_gfx {
@@ -79,12 +95,20 @@ body {
     padding-top: 24.4%;
 }
 
+.arms_control_gfx {
+    width: 100%;
+}
+
 #arms_control_txt {
     position: absolute;
     z-index: 1000;
     width: 21.2%;
     left:40.1%;
     padding-top: 14.9%;
+}
+
+.arms_control_txt {
+    width: 100%;
 }
 
 #nuc_inf_gfx {
@@ -95,12 +119,20 @@ body {
     padding-top: 29.25%;
 }
 
+.nuc_inf_gfx {
+    width: 100%;
+}
+
 #nuc_inf_txt {
     position: absolute;
     z-index: 1000;
     width: 18.9%;
     left:59.7%;
     padding-top: 46%;
+}
+
+.nuc_inf_txt {
+    width: 100%;
 }
 
 #deterrence_gfx {
@@ -111,12 +143,20 @@ body {
     padding-top: 31.5%;
 }
 
+.deterrence_gfx {
+    width: 100%;
+}
+
 #deterrence_txt {
     position: absolute;
     z-index: 1000;
     width: 13.6%;
     left:80.1%;
     padding-top: 27.1%;
+}
+
+.deterrence_txt {
+    width: 100%;
 }
 
 #overlay_container {
