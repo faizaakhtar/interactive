@@ -112,7 +112,11 @@
             <script type="text/javascript" src="js/interactive.js"></script>
             <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
             <script type="text/javascript">
-                var pymChild = new pym.Child();
+                var pymChild = new pym.Child({renderCallback: setDivHeight});
+                
+                function setDivHeight () {
+                    $("#graphics_container").height($("#background_image").height());
+                }
             </script>
         </body>
     </html>
