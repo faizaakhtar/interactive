@@ -123,15 +123,37 @@
                     
                 </div>
                 
+                <div id="mobile_container">
+                    <img id="mobile_title" src="images/nnsa_graphic_title.png">
+                    <div id="nuc_wea_mobile" class="drop_block">
+                        <h2 class="header_dropdown">NUCLEAR WEAPONS</h2>
+                    </div>
+                    <div id="nuc_wea_mobile" class="drop_block">
+                        <h2 class="header_dropdown">COUNTERTERRORISM and COUNTERPROLIFERATION</h2>
+                    </div>
+                    <div id="nuc_wea_mobile" class="drop_block">
+                        <h2 class="header_dropdown">NONPROLIFERATION and ARMS CONTROL</h2>
+                    </div>
+                    <div id="nuc_wea_mobile" class="drop_block">
+                        <h2 class="header_dropdown">NUCLEAR INFRASTRUCTURE MODERNIZATION</h2>
+                    </div>
+                    <div id="nuc_wea_mobile" class="drop_block">
+                        <h2 class="header_dropdown">DETERRENCE</h2>
+                    </div>
+                </div>
+                
                 
             </div>
             <script type="text/javascript" src="js/interactive.js"></script>
             <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
             <script type="text/javascript">
                 var pymChild = new pym.Child({renderCallback: setDivHeight});
-                
                 function setDivHeight () {
+                    if($("#background_image").css("display") == "block") {
                     $("#graphics_container").height($("#background_image").height());
+                    } else {
+                        $("#graphics_container").height(758);
+                    }
                 }
             </script>
         </body>

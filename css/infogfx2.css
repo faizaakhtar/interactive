@@ -10,15 +10,16 @@ body {
 }
 
 #graphics_container:after { 
-    content: " "; 
+    content: ""; 
     display: block;
     clear: both;
-} 
+}
 
 #background_image {
     position: absolute;
     display: block;
     width: 100%;
+    z-index: 0;
 }
 
 /*#info_title {
@@ -166,7 +167,7 @@ body {
     z-index: 5000;
     background-color: rgba(0, 0, 0, .8);
     display: none;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #overlay_close {
@@ -255,6 +256,7 @@ body {
     margin: 0 auto;
 }
 
+
 /*****************************************Views***********************************/
 #nuc_wea_view {
     position: relative;
@@ -292,7 +294,67 @@ body {
     display: none;
 }
 
+/**************************Mobile Assets*******************************/
 
-@media screen and (max-width:979px) {
+#mobile_container {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    height: 60%;
+    overflow-y: scroll;
+    vertical-align: middle;
+}
+
+.header_dropdown {
+    display: table-cell;
+    color: white;
+    font-weight: bolder;
+    margin: auto 2px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: larger;
+    text-shadow: 2px 2px 2px black;
+}
+
+.drop_block {
+    display: table;
+    width: 95%;
+    background-color: grey;
+    border: 2px solid rgb(244, 177, 53);
+    border-radius: 2px;
+    margin: 3px auto;
+    padding: 2px;
+    height: 18%;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 720px) {
+    #mobile_container {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+    #nuc_wea_gfx, #nuc_wea_txt,
+    #counterterror_gfx, #counterterror_txt,
+    #arms_control_gfx, #arms_control_txt,
+    #nuc_inf_gfx, #nuc_inf_txt,
+    #deterrence_gfx, #deterrence_txt,
+    #background_image, #title_image {
+        display: none;
+    }
     
+    #mobile_title {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+    
+    #graphics_container {
+        background-image: url("../images/bkgrd_map.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 738px;
+    }
 }
