@@ -195,6 +195,7 @@ body {
     border-radius: 3px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
     margin: 20px auto;
+    font-size: 1.5em;
 }
 
 #overlay_close:hover, #overlay_button_close:hover {
@@ -203,12 +204,15 @@ body {
 
 .overlay_header {
     margin: 5px 0;
-    font-size: large;
+    font-weight: bolder;
+    font-size: 2em;
     color: white;
 }
 
 .overlay_subheader {
     color: white;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .overlay_snip {
@@ -223,25 +227,28 @@ body {
 
 .overlay_video {
     display: block;
-    width: 100%;
+    width: 560px;
+    height: 315px;
     margin: 0 auto;
 }
 
 .overlay_paragraph {
     color: white;
     margin: 15px 0;
+    font-size: 1.5em;
 }
 
-.overlay_list {
+/*.overlay_list {
     list-style: circle;
     color: white;
     margin: 15px 0;
-}
+}*/
 
 .overlay_list {
     list-style: square;
     color: white;
     margin: 15px 0 15px 20px;
+    font-size: 1.5em;
 }
 
 .overlay_nested_list {
@@ -251,8 +258,9 @@ body {
 }
 
 .filler {
-    width: 100%;
     display: block;
+    width: 560px;
+    height: 315px;
     margin: 0 auto;
 }
 
@@ -312,7 +320,7 @@ body {
     margin: auto 2px;
     vertical-align: middle;
     text-align: center;
-    font-size: larger;
+    font-size: 1.2em;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -341,6 +349,15 @@ body {
     color: white;
     padding: 5px;
     z-index: -100;
+}
+
+.dropdown_subheader {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.dropdown_para {
+    font-size: 1.1em;
 }
 
 @media screen and (min-width: 720px) {
