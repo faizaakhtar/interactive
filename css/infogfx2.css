@@ -297,11 +297,11 @@ body {
 /**************************Mobile Assets*******************************/
 
 #mobile_container {
-    display: table;
+    display: block;
     width: 100%;
     margin: 0 auto;
-    height: 60%;
-    overflow-y: scroll;
+    height: 595px;
+    overflow-y: auto;
     vertical-align: middle;
 }
 
@@ -321,11 +321,26 @@ body {
     width: 95%;
     background-color: grey;
     border: 2px solid rgb(244, 177, 53);
-    border-radius: 2px;
-    margin: 3px auto;
+    border-radius: 20px;
+    margin: 3px auto 0 auto;
     padding: 2px;
-    height: 18%;
+    height: 14%;
     vertical-align: middle;
+    box-shadow: 3px 7px 7px black;
+    z-index: 500;
+}
+
+.dropdown_rect {
+    display: none;
+    width: 83%;
+    background-color: rgba(100, 100, 100, 0.7);
+    margin: 0 auto;
+    border-right: 2px solid rgb(244, 177, 53);
+    border-left: 2px solid rgb(244, 177, 53);
+    border-bottom: 2px solid rgb(244, 177, 53);
+    color: white;
+    padding: 5px;
+    z-index: -100;
 }
 
 @media screen and (min-width: 720px) {

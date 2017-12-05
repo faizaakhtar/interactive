@@ -217,6 +217,65 @@ $(document).ready(function () {
     });
     
     
-    //Test functions
+    ////////////////////Mobile Clicks////////////////////
+    $("#nuc_wea_mobile").click(function() {
+        if($("#nuc_wea_dropdown").css("display") == "block") {
+            $("#nuc_wea_mob_header").css("color", "white");
+            $("#nuc_wea_dropdown").slideToggle(500); 
+        } else {
+            $(".header_dropdown").css("color", "white");
+            $(".dropdown_rect").slideUp(500);
+            $("#nuc_wea_mob_header").css("color", "rgb(244, 177, 53)");
+            $("#nuc_wea_dropdown").slideToggle(500);
+        }      
+    });
+    
+    $("#counterterror_mobile").click(function() {
+        if($("#counterterror_dropdown").css("display") == "block") {
+            $("#counterterror_mob_header").css("color", "white");
+            $("#counterterror_dropdown").slideToggle(500); 
+        } else {
+            $(".header_dropdown").css("color", "white");
+            $(".dropdown_rect").slideUp(500);
+            $("#counterterror_mob_header").css("color", "rgb(244, 177, 53)");
+            $("#counterterror_dropdown").slideToggle(500);
+        }
+    });
+    
+    $("#arms_control_mobile").click(function() {
+        if($("#arms_control_dropdown").css("display") == "block") {
+            $("#arms_control_mob_header").css("color", "white");
+            $("#arms_control_dropdown").slideToggle(500); 
+        } else {
+            $(".header_dropdown").css("color", "white");
+            $(".dropdown_rect").slideUp(500);
+            $("#arms_control_mob_header").css("color", "rgb(244, 177, 53)");
+            $("#arms_control_dropdown").slideToggle(500);
+        }
+    });
+    
+    $("#nuc_inf_mobile").click(function() {
+        if($("#nuc_inf_dropdown").css("display") == "block") {
+            $("#nuc_inf_mob_header").css("color", "white");
+            $("#nuc_inf_dropdown").slideToggle(500); 
+        } else {
+            $(".header_dropdown").css("color", "white");
+            $(".dropdown_rect").slideUp(500);
+            $("#nuc_inf_mob_header").css("color", "rgb(244, 177, 53)");
+            $("#nuc_inf_dropdown").slideToggle(500);
+        }
+    });
+    
+    $("#deterrence_mobile").click(function() {
+        if($("#deterrence_dropdown").css("display") == "block") {
+            $("#deterrence_mob_header").css("color", "white");
+            $("#deterrence_dropdown").slideToggle(500); 
+        } else {
+            $(".header_dropdown").css("color", "white");
+            $(".dropdown_rect").slideUp(500);
+            $("#deterrence_mob_header").css("color", "rgb(244, 177, 53)");
+            $("#deterrence_dropdown").slideToggle(500);
+        }
+    });
     
 });
