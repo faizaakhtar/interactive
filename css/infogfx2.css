@@ -354,6 +354,7 @@ body {
 .dropdown_subheader {
     font-weight: bold;
     font-size: 1.3em;
+    margin: 10px;
 }
 
 .dropdown_para {
