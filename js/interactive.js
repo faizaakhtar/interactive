@@ -134,14 +134,14 @@ $(document).ready(function () {
     $(".nuc_wea_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
-            $("#nuc_wea_video").attr("src", "");
+            $("#nuc_wea_video").attr("src", "https://www.youtube.com/embed/rVr2mFPxMGA?rel=0");
         }); 
     });
     
     $(".nuc_wea_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#nuc_wea_view").slideToggle(400);
-            $("#nuc_wea_video").attr("src", "");
+            $("#nuc_wea_video").attr("src", "https://www.youtube.com/embed/rVr2mFPxMGA?rel=0");
         }); 
     });
     
@@ -149,14 +149,14 @@ $(document).ready(function () {
     $(".counterterror_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
-            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/h8fspZnHK9w?rel=0");
         }); 
     });
     
     $(".counterterror_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
-            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/uVRpDNLC9iU?rel=0&amp;showinfo=0");
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/h8fspZnHK9w?rel=0");
         }); 
     });
     
@@ -164,12 +164,14 @@ $(document).ready(function () {
     $(".arms_control_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
         }); 
     });
     
     $(".arms_control_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
         }); 
     });
     
@@ -187,7 +189,7 @@ $(document).ready(function () {
     });
     
     //Nuke Infra Mod
-    $(".deterrence_gfx").click(function(){
+    /*$(".deterrence_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#deterrence_view").slideToggle(400);
         }); 
@@ -197,7 +199,7 @@ $(document).ready(function () {
         $("#overlay_container").fadeToggle(500, function() {
             $("#deterrence_view").slideToggle(400);
         }); 
-    });
+    });*/
     
     
     /////////////Close the Overlay////////////////

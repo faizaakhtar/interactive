@@ -227,15 +227,41 @@ body {
 
 .overlay_video {
     display: block;
-    width: 560px;
-    height: 315px;
     margin: 0 auto;
+}
+
+.video_container {
+	position:relative;
+    display: block;
+    width: 75%;
+    margin:0 auto;
+	padding-bottom:40%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video_container iframe, .video_container object, .video_container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
 .overlay_paragraph {
     color: white;
     margin: 15px 0;
     font-size: 1.5em;
+    width:75%;
+    margin: 35px auto;
+    padding: 10px;
+}
+
+#nuc_inf_pdf_gfx {
+    display: block;
+    width: 75%;
+    margin: 20px auto 0 auto;
 }
 
 /*.overlay_list {
@@ -245,16 +271,28 @@ body {
 }*/
 
 .overlay_list {
-    list-style: square;
+    list-style: none;
     color: white;
     margin: 15px 0 15px 20px;
     font-size: 1.5em;
+    width: 75%;
+    margin: 35px auto;
 }
 
 .overlay_nested_list {
     list-style: circle;
     color: white;
-    margin: 5px 0 5px 15px;
+    margin: 15px 0 15px 45px;
+}
+
+.overlay_nested_list li {
+    margin: 10px;
+}
+
+.overlay_nested_list span {
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(244, 177, 53);
 }
 
 .filler {
