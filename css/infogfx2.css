@@ -2,6 +2,10 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #graphics_container {
     position: relative;
     width: 100%;
@@ -412,7 +416,8 @@ body {
     #arms_control_gfx, #arms_control_txt,
     #nuc_inf_gfx, #nuc_inf_txt,
     #deterrence_gfx, #deterrence_txt,
-    #background_image, #title_image {
+    #background_image, #title_image,
+    #overlay_container {
         display: none;
     }
     
@@ -427,5 +432,14 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         height: 738px;
+    }
+    
+    .overlay_list {
+        font-size: 1.1em;
+        width: 100%;
+    }
+    
+    #nuc_inf_pdf_gfx {
+        width: 100%;
     }
 }

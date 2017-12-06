@@ -268,7 +268,7 @@ $(document).ready(function () {
         }
     });
     
-    $("#deterrence_mobile").click(function() {
+    /*$("#deterrence_mobile").click(function() {
         if($("#deterrence_dropdown").css("display") == "block") {
             $("#deterrence_mob_header").css("color", "white");
             $("#deterrence_dropdown").slideToggle(500); 
@@ -278,6 +278,13 @@ $(document).ready(function () {
             $("#deterrence_mob_header").css("color", "rgb(244, 177, 53)");
             $("#deterrence_dropdown").slideToggle(500);
         }
-    });
+    });*/
+    
+    if($("#graphics_container").attr("width") < "720" ) {
+    $("#overlay_container").hide(500, function() {
+            $(".open_view").hide();
+            $(".overlay_video").attr("src", "");
+       });
+    }
     
 });
