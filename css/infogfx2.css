@@ -164,6 +164,22 @@ a {
     width: 100%;
 }
 
+#deterrence_message {
+    position: absolute;
+    z-index: 500;
+    width: 13.6%;
+    left: 80.1%;
+    padding-top: 30%;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.d_para {
+    display: none;
+}
+
 #overlay_container {
     position: fixed;
     width: 100%;
@@ -304,6 +320,16 @@ a {
     width: 560px;
     height: 315px;
     margin: 0 auto;
+}
+
+.content_highlight {
+    display: block;
+    background-color: grey;
+    border: 2px solid rgb(244,177,53);
+    border-radius: 5px;
+    width: 75%;
+    text-shadow: 2px 2px 2px black;
+    margin: 10px auto;
 }
 
 

@@ -111,10 +111,12 @@ $(document).ready(function () {
         $(this).attr("src", "images/deterrence_icon_gold_glow.png");
         $(".deterrence_txt").attr("src", "images/deterrence_head_gold.png");
         $(this).css('cursor', 'pointer');
+        $(".d_para").slideToggle(200);
     },
         function() {
             $(this).attr("src", "images/deterrence_icon_white_glow.png");
             $(".deterrence_txt").attr("src", "images/deterrence_head.png");
+            $(".d_para").slideToggle(200);
         });
     
     //Deterrence Text
@@ -122,10 +124,12 @@ $(document).ready(function () {
         $(this).attr("src", "images/deterrence_head_gold.png");
         $(".deterrence_gfx").attr("src", "images/deterrence_icon_gold_glow.png");
         $(this).css('cursor', 'pointer');
+        $(".d_para").slideToggle(200);
     },
         function() {
             $(this).attr("src", "images/deterrence_head.png");
             $(".deterrence_gfx").attr("src", "images/deterrence_icon_white_glow.png");
+            $(".d_para").slideToggle(200);
         });
     
     
