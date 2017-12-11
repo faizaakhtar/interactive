@@ -164,22 +164,6 @@ a {
     width: 100%;
 }
 
-#deterrence_message {
-    position: absolute;
-    z-index: 500;
-    width: 13.6%;
-    left: 80.1%;
-    padding-top: 30%;
-    font-weight: bold;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-}
-
-.d_para {
-    display: none;
-}
-
 #overlay_container {
     position: fixed;
     width: 100%;
@@ -270,12 +254,12 @@ a {
 }
 
 .overlay_paragraph {
-    color: white;
-    margin: 15px 0;
+	background: #ffffff;
+    color: black;
     font-size: 1.5em;
-    width:75%;
+    width:70%;
     margin: 35px auto;
-    padding: 10px;
+    padding: 25px;
 }
 
 #nuc_inf_pdf_gfx {
@@ -291,17 +275,19 @@ a {
 }*/
 
 .overlay_list {
+	background: #ffffff;
     list-style: none;
-    color: white;
+    color: black;
     margin: 15px 0 15px 20px;
     font-size: 1.5em;
-    width: 75%;
+    width: 70%;
     margin: 35px auto;
+	padding: 25px;
 }
 
 .overlay_nested_list {
     list-style: circle;
-    color: white;
+    color: black;
     margin: 15px 0 15px 45px;
 }
 
@@ -320,16 +306,6 @@ a {
     width: 560px;
     height: 315px;
     margin: 0 auto;
-}
-
-.content_highlight {
-    display: block;
-    background-color: grey;
-    border: 2px solid rgb(244,177,53);
-    border-radius: 5px;
-    width: 75%;
-    text-shadow: 2px 2px 2px black;
-    margin: 10px auto;
 }
 
 
@@ -414,7 +390,7 @@ a {
     border-right: 2px solid rgb(244, 177, 53);
     border-left: 2px solid rgb(244, 177, 53);
     border-bottom: 2px solid rgb(244, 177, 53);
-    color: white;
+    color: black;
     padding: 5px;
     z-index: -100;
 }
@@ -427,6 +403,8 @@ a {
 
 .dropdown_para {
     font-size: 1.1em;
+	background: #ffffff;
+	color: #000000;
 }
 
 @media screen and (min-width: 720px) {
@@ -463,6 +441,7 @@ a {
     .overlay_list {
         font-size: 1.1em;
         width: 100%;
+		padding: 0px;
     }
     
     #nuc_inf_pdf_gfx {
