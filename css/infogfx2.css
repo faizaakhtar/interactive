@@ -256,7 +256,7 @@ a {
 .overlay_paragraph {
 	background: #ffffff;
     color: black;
-    font-size: 1.5em;
+    font-size: 14pt;
     width:70%;
     margin: 35px auto;
     padding: 25px;
@@ -279,7 +279,7 @@ a {
     list-style: none;
     color: black;
     margin: 15px 0 15px 20px;
-    font-size: 1.5em;
+    font-size: 14pt;
     width: 70%;
     margin: 35px auto;
 	padding: 25px;
@@ -402,7 +402,7 @@ a {
 }
 
 .dropdown_para {
-    font-size: 1.1em;
+    font-size: 14pt;
 	background: #ffffff;
 	color: #000000;
 }
@@ -437,9 +437,21 @@ a {
         background-repeat: no-repeat;
         height: 738px;
     }
+	
+	.dropdown_para {
+		font-size: 10pt;
+	}
+	
+	.overlay_paragraph {
+		font-size: 10pt;
+	}
+	
+	.overlay_nested_list {
+		font-size: 10pt;
+	}
     
     .overlay_list {
-        font-size: 1.1em;
+        font-size: 10pt;
         width: 100%;
 		padding: 0px;
     }
