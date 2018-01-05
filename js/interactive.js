@@ -111,12 +111,10 @@ $(document).ready(function () {
         $(this).attr("src", "images/deterrence_icon_gold_glow.png");
         $(".deterrence_txt").attr("src", "images/deterrence_head_gold.png");
         $(this).css('cursor', 'pointer');
-        $(".d_para").slideToggle(200);
     },
         function() {
             $(this).attr("src", "images/deterrence_icon_white_glow.png");
             $(".deterrence_txt").attr("src", "images/deterrence_head.png");
-            $(".d_para").slideToggle(200);
         });
     
     //Deterrence Text
@@ -124,12 +122,10 @@ $(document).ready(function () {
         $(this).attr("src", "images/deterrence_head_gold.png");
         $(".deterrence_gfx").attr("src", "images/deterrence_icon_gold_glow.png");
         $(this).css('cursor', 'pointer');
-        $(".d_para").slideToggle(200);
     },
         function() {
             $(this).attr("src", "images/deterrence_head.png");
             $(".deterrence_gfx").attr("src", "images/deterrence_icon_white_glow.png");
-            $(".d_para").slideToggle(200);
         });
     
     
@@ -153,14 +149,14 @@ $(document).ready(function () {
     $(".counterterror_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
-            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/h8fspZnHK9w?rel=0");
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/F-KYOpci_-o?rel=0");
         }); 
     });
     
     $(".counterterror_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#counterterror_view").slideToggle(400);
-            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/h8fspZnHK9w?rel=0");
+            $("#counterterror_video").attr("src", "https://www.youtube.com/embed/F-KYOpci_-o?rel=0");
         }); 
     });
     
@@ -168,14 +164,14 @@ $(document).ready(function () {
     $(".arms_control_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
-            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/G4hZvSlHh_o?rel=0");
         }); 
     });
     
     $(".arms_control_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
-            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/G4hZvSlHh_o?rel=0");
         }); 
     });
     
