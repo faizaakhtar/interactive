@@ -164,14 +164,14 @@ $(document).ready(function () {
     $(".arms_control_gfx").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
-            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/G4hZvSlHh_o?rel=0");
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
         }); 
     });
     
     $(".arms_control_txt").click(function(){
         $("#overlay_container").fadeToggle(500, function() {
             $("#arms_control_view").slideToggle(400);
-            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/G4hZvSlHh_o?rel=0");
+            $("#arms_control_video").attr("src", "https://www.youtube.com/embed/U6W4jntbcY8?rel=0");
         }); 
     });
     
